@@ -23,6 +23,94 @@
     </head>
     <body>
 	    <p>Это пример абзаца текста.</p>
+
+<div class="leaflet-control-container">
+  <div class="leaflet-top leaflet-left">
+    <div class="leaflet-control-zoom leaflet-bar leaflet-control">
+      <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
+      <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
+    </div>
+    <div class="leaflet-control-geocoder leaflet-bar leaflet-control">
+      <button class="leaflet-control-geocoder-icon fa fa-search" type="button" title="Search for a place">&nbsp;</button>
+      <div class="leaflet-control-geocoder-form">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="leaflet-control-geocoder-form-no-error">Nothing found.</div>
+      <ul class="leaflet-control-geocoder-alternatives leaflet-control-geocoder-alternatives-minimized"></ul>
+    </div>
+  </div>
+
+  <div class="leaflet-top leaflet-right">
+    <div class="leaflet-control-layers leaflet-control" aria-haspopup="true">
+      <a class="leaflet-control-layers-toggle" href="#" title="Layers"></a>
+      <section class="leaflet-control-layers-list">
+        <div class="leaflet-control-layers-base"></div>
+        <div class="leaflet-control-layers-separator" style="display: none;"></div>
+        <div class="leaflet-control-layers-overlays">
+          <div class="leaflet-layerstree-header leaflet-layerstree-header-pointer leaflet-layerstree-nevershow" tabindex="0">
+            <span>
+              <span class="leaflet-layerstree-closed leaflet-layerstree-hide">+</span>
+              <span class="leaflet-layerstree-opened">−</span>
+              <span class="leaflet-layerstree-header-space"> </span>
+            </span>
+            <span>
+              <span class="leaflet-layerstree-header-label">
+                <span class="leaflet-layerstree-header-name"></span>
+              </span>
+            </span>
+          </div>
+          <div class="leaflet-layerstree-children leaflet-layerstree-children-nopad">
+            <div class="leaflet-layerstree-node">
+              <div class="leaflet-layerstree-header">
+                <span class="leaflet-layerstree-nevershow">
+                  <span class="leaflet-layerstree-closed leaflet-layerstree-hide">+</span>
+                  <span class="leaflet-layerstree-opened">−</span>
+                  <span class="leaflet-layerstree-header-space"> </span>
+                </span>
+                <span>
+                  <label class="leaflet-layerstree-header-label">
+                    <input type="checkbox" class="leaflet-control-layers-selector" checked>
+                    <span class="leaflet-layerstree-header-name">
+                      <img src="legend/Chelyabinkaya1_7.png"> Chelyabinkaya1
+                    </span>
+                  </label>
+                </span>
+              </div>
+            </div>
+            <!-- Остальные элементы списка -->
+            <div class="leaflet-layerstree-node">
+              <div class="leaflet-layerstree-header">
+                <span class="leaflet-layerstree-nevershow">
+                  <span class="leaflet-layerstree-closed leaflet-layerstree-hide">+</span>
+                  <span class="leaflet-layerstree-opened">−</span>
+                  <span class="leaflet-layerstree-header-space"> </span>
+                </span>
+                <span>
+                  <label class="leaflet-layerstree-header-label">
+                    <input type="checkbox" class="leaflet-control-layers-selector" checked>
+                    <span class="leaflet-layerstree-header-name">
+                      <img src="legend/Udmurtiya1_6.png"> Udmurtiya1
+                    </span>
+                  </label>
+                </span>
+              </div>
+            </div>
+            <!-- Повторить для остальных элементов -->
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <div class="leaflet-bottom leaflet-left"></div>
+  <div class="leaflet-bottom leaflet-right">
+    <div class="leaflet-control-attribution leaflet-control">
+      <a href="google.com" target="_blank">Динамика численности населения за 2002-2010</a> ·
+      <a href="https://bkmzgit.github.io/WebMapArticle.github.io" title="A JS library for interactive maps">Меню</a> ·
+      <a href="https://github.com/Bkmzgit/WebMapArticle.github.io">Github</a>
+    </div>
+  </div>
+</div>
         <div id="map">
         </div>
 	<script src="js/qgis2web_expressions.js"></script>
